@@ -1,0 +1,7 @@
+{
+  "name": "Migo-s",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
