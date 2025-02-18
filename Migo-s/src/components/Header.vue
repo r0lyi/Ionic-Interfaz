@@ -34,20 +34,15 @@
   
   
   
-  <div class="right flex items-center gap-4">
-    <!-- Contenedor del buscador -->
-    <div class="buscador">
-      <ion-searchbar
-        placeholder="Buscar"
-        autocapitalize="on"
-        autocomplete="on"
-        autocorrect="on"
-        class="custom-searchbar"
-      ></ion-searchbar>
-    </div>
+        <div class="right ">
+          <!-- Contenedor del buscador -->
+
+        <div class="buscador">
+          <ion-searchbar class="custom-searchbar"  placeholder=" "></ion-searchbar>
+      </div>
 
     <!-- Contenedor de los iconos -->
-    <div class="">
+    <div class="iconos">
       <!-- Icono de corazón (gustos) -->
       <ion-button @click="navigateTo('/gustos')" fill="clear" class="icon-button p-0">
         <ion-icon :icon="heartOutline" class="text-xl text-white hover:text-gray-200 transition-colors duration-300"></ion-icon>
@@ -115,36 +110,81 @@
   </script>
   
   <style scoped>
-  /* -------------------------------- */
-  .buscador{
-    border-radius: 50px; /* Bordes redondeados */
-    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
-    height: 100px;
-    width: 170px;
+.Contenedor_Menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 16px;
+    background-color: #B8DFF6;
 
+  }  /* -------------------------------- */
+
+      /* Estilos personalizados para el buscador */
+      .custom-searchbar {
+        width: 150px; /* Ancho reducido */
+        overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+        border-top-left-radius:50px ;
+        border-top-right-radius:50px  ;
+        border-bottom-left-radius: 50px ;
+        border-bottom-right-radius: 50px ;
+        color: white;
+
+
+      }
+
+      /* Anular estilos internos del ion-searchbar */
+      .custom-searchbar .searchbar-input-container {
+        border-top-left-radius:50px ;
+        border-top-right-radius:50px  ;
+        border-bottom-left-radius: 50px ;
+        border-bottom-right-radius: 50px ;
+        color: white;
+
+      }
+
+      .custom-searchbar .searchbar-input {
+        border-top-left-radius:50px ;
+        border-top-right-radius:50px  ;
+        border-bottom-left-radius: 50px ;
+        border-bottom-right-radius: 50px ;
+        color: white;
+
+      }
+
+  .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
   }
-  /* Estilos personalizados para el buscador */
-.custom-searchbar {
-  border-radius:50px; /* Bordes redondeados */
-  overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
-}
 
-/* Anular estilos internos del ion-searchbar */
-.custom-searchbar .searchbar-input-container {
-  border-radius:50px /* Bordes redondeados para el contenedor interno */
-}
+  .buscador{
+    width: 300px;
+    background-color: transparent;
+    border-top-right-radius: 20px;  
+    border-bottom-right-radius: 20px;
+  }
 
-.custom-searchbar .searchbar-input {
-  border-radius:50px /* Bordes redondeados para el input */
-}
+
+  .iconos{
+    display: flex;
+    align-items: center;
+    color: black;
+   
+  }
+
+   
 
 
 /* Efecto hover para los iconos */
 .icon-button {
   --background: transparent;
   --background-hover: transparent;
-  --color: white;
-  --color-hover: rgba(255, 255, 255, 0.8);
+  --color: black;
+  --color-hover: rgba(255, 255, 255, 1.8);
+  
+
 }
 
   
@@ -185,13 +225,7 @@
   }
   
   
-  .Contenedor_Menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 16px;
-  }
+
   
   
   
