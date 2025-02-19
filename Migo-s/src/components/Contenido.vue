@@ -43,8 +43,8 @@ export default {
 }
 
 .card {
-  width: 40em;
-  height: 50em;
+  width: 30em;
+  height: 40em;
   border-radius: 15px;
   cursor: pointer;
   transition: transform 0.3s ease;

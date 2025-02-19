@@ -1,0 +1,42 @@
+[
+    {
+      "name": "Zapatillas Nike Air Max",
+      "price": "$120.00",
+      "image": "https://via.placeholder.com/300x200"
+    },
+    {
+      "name": "Balón de Fútbol Adidas",
+      "price": "$25.00",
+      "image": "https://via.placeholder.com/300x200"
+    },
+    {
+      "name": "Raqueta de Tenis Wilson",
+      "price": "$80.00",
+      "image": "https://via.placeholder.com/300x200"
+    },
+    {
+      "name": "Camiseta Deportiva Under Armour",
+      "price": "$45.00",
+      "image": "https://via.placeholder.com/300x200"
+    },
+    {
+      "name": "Zapatillas Nike Air Max",
+      "price": "$120.00",
+      "image": "https://via.placeholder.com/300x200"
+    },
+    {
+      "name": "Balón de Fútbol Adidas",
+      "price": "$25.00",
+      "image": "https://via.placeholder.com/300x200"
+    },
+    {
+      "name": "Raqueta de Tenis Wilson",
+      "price": "$80.00",
+      "image": "https://via.placeholder.com/300x200"
+    },
+    {
+      "name": "Camiseta Deportiva Under Armour",
+      "price": "$45.00",
+      "image": "https://via.placeholder.com/300x200"
+    }
+  ]

@@ -23,6 +23,9 @@
       <h1 class="mensaje-destacado">¡EQUIPATE CON LO MEJOR!</h1>
         </div>
 
+<Productos class="containerProduct" />
+
+
         
     </ion-content>
     
@@ -38,6 +41,8 @@ import Header from '@/components/Header.vue';
 import Banner from '@/components/Banner.vue';
 import SliderInit from '@/components/SliderInit.vue';
 import Contenido from '@/components/Contenido.vue';
+import Productos from '@/components/Productos.vue';
+
 
 
 
@@ -50,7 +55,8 @@ export default {
     Header,
     Banner,
     SliderInit,
-    Contenido
+    Contenido,
+    Productos
     
     
      

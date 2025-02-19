@@ -23,15 +23,15 @@
 
 <script>
 import { ref, onMounted } from 'vue';
+
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 export default {
-  name: 'PremiumSlider',
   components: {
     Swiper,
-    SwiperSlide,
+    SwiperSlide
   },
   setup() {
     const modules = [Pagination, Autoplay, Navigation];
@@ -96,7 +96,7 @@ export default {
   background-size: cover;
   background-position: center;
   position: relative;
-  transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   
   &::before {
     content: '';
@@ -123,7 +123,7 @@ export default {
   margin: 0 auto;
   transform: translateY(50px);
   opacity: 0;
-  transition: all 0.6s ease;
+  transition: all 0.4s ease;
 }
 
 .swiper-slide-active .content-overlay {
