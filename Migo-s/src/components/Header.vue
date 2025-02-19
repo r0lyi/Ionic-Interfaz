@@ -5,7 +5,7 @@
         <div class="Contenedor_Menu">
   
        <div class="left">
-        <ion-title>{{ title }}</ion-title>
+        <ion-title>Inicio</ion-title>
         </div>
   
   
@@ -76,7 +76,6 @@
     personOutline,
   } from "ionicons/icons";
   export default {
-    name: 'Header',
     components: {
       IonHeader,
       IonToolbar,
@@ -85,20 +84,10 @@
       IonButton,
       IonIcon
     },
-    props: {
-      title: {
-        type: String,
-        default: 'Mi Aplicación'
-      }
-    },
+   
 
-    setup() {
-      const navigateTo = (path) => {
-        console.log('Navigating to', path);
-      };
-
+    data() {
       return {
-        navigateTo,
         heartOutline,
         cartOutline,
         personOutline,
@@ -116,7 +105,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 16px;
-    background-color: #B8DFF6;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 
   }  /* -------------------------------- */
 
@@ -195,6 +184,8 @@
 .menu-button {
   position: relative;
   padding: 8px 0; /* Espaciado interno */
+  font-size: 1rem;
+
 }
 
 .menu-button::after {

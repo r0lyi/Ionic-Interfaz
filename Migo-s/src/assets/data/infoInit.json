@@ -1,0 +1,23 @@
+[
+    {
+        
+      "title": "Slide 1",
+      "description": "Descripción del Slide 1",
+      "image": "/images/TuSalud.png" 
+    },
+    {
+      "title": "Slide 2",
+      "description": "Descripción del Slide 2",
+      "image": "https://cdn.pixabay.com/photo/2023/03/25/19/09/runner-7876675_1280.jpg"
+    },
+    {
+        "title": "Slide 2",
+        "description": "Descripción del Slide 2",
+        "image": "https://media.istockphoto.com/id/102284192/es/foto/salto-obst%C3%A1culos-on-track-runner.jpg?s=2048x2048&w=is&k=20&c=f5kRtYdgAZOnUHjaf0pgbgMLwI8WqEGSAL0qo7DGA98="
+      },
+      {
+        "title": "Slide 2",
+        "description": "Descripción del Slide 2",
+        "image": "https://cdn.pixabay.com/photo/2019/06/25/11/11/mountain-bike-4297972_1280.jpg"
+      }
+  ]
