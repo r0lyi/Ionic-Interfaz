@@ -1,6 +1,7 @@
 <template>
     <div class="banner">
       <p>¡Últimas noticias! Suscríbete para recibir actualizaciones.</p>
+    <a href="/Login"> <p  >Login</p></a> 
     </div>
   </template>
   
@@ -23,7 +24,7 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   z-index: 1000;
 }
   </style>

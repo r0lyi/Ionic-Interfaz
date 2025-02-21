@@ -22,13 +22,14 @@
       <div class="mensaje-container">
       <h1 class="mensaje-destacado">¡EQUIPATE CON LO MEJOR!</h1>
         </div>
+        <Productos class="containerProduct" />
 
-<Productos class="containerProduct" />
 
+
+        <Footer class="footer"  />
 
         
     </ion-content>
-    
 
   </ion-page>
 
@@ -42,6 +43,7 @@ import Banner from '@/components/Banner.vue';
 import SliderInit from '@/components/SliderInit.vue';
 import Contenido from '@/components/Contenido.vue';
 import Productos from '@/components/Productos.vue';
+import Footer from '@/components/Footer.vue';
 
 
 
@@ -56,8 +58,8 @@ export default {
     Banner,
     SliderInit,
     Contenido,
-    Productos
-    
+    Productos,
+    Footer
     
      
   }

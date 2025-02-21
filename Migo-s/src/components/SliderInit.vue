@@ -47,6 +47,7 @@ export default {
     const autoplayOptions = ref({
       delay: 5000,
       disableOnInteraction: false,
+      
     });
 
     const navigationOptions = ref({
