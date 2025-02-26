@@ -26,7 +26,7 @@
 
 
 
-        <Footer class="footer"  />
+        <Footer   />
 
         
     </ion-content>
