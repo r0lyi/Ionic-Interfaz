@@ -1,5 +1,9 @@
 <template>
   <ion-page>
+    <div>
+    <Buscador />
+    <!-- Otros elementos del menú -->
+  </div>
     <Banner class="banner" />
   
     <Header class="header"  />
@@ -44,6 +48,8 @@ import SliderInit from '@/components/SliderInit.vue';
 import Contenido from '@/components/Contenido.vue';
 import Productos from '@/components/Productos.vue';
 import Footer from '@/components/Footer.vue';
+import Buscador from "@/components/Buscador.vue";
+
 
 
 
@@ -59,7 +65,8 @@ export default {
     SliderInit,
     Contenido,
     Productos,
-    Footer
+    Footer,
+    Buscador
     
      
   }

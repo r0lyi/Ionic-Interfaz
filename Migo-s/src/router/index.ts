@@ -7,6 +7,9 @@ import InfoProducto from '@/views/InfoProducto.vue';
 import Gustos from '@/views/Gustos.vue';
 import Evento from '@/views/Evento.vue';
 import InfoEvento from '@/views/InfoEvento.vue';
+import Opinion from '@/views/Opinion.vue';
+import Pago from '@/views/Pago.vue';
+import Personal from '@/views/Personal.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -47,6 +50,21 @@ const routes: Array<RouteRecordRaw> = [
     path: '/InfoEvento',
     name: 'InfoEvento',
     component: InfoEvento
+  },
+  {
+    path: '/Opinion',
+    name: 'Opinion',
+    component: Opinion
+  },
+  {
+    path: '/Pago',
+    name: 'Pago',
+    component: Pago
+  },
+  {
+    path: '/Personal',
+    name: 'Personal',
+    component: Personal
   }
   
 ]
