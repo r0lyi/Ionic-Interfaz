@@ -4,7 +4,6 @@
     <button class="search-button" @click="toggleSearch">
       <ion-icon :icon="searchOutline" class="search-icon"></ion-icon>
       <span class="search-text">Buscar</span>
-
     </button>
 
     <!-- Panel de búsqueda -->
@@ -33,34 +32,31 @@
     </div>
   </div>
 </template>
+
 <script>
+import { IonIcon } from '@ionic/vue';
+import { searchOutline } from 'ionicons/icons';
 
-import { IonIcon } from '@ionic/vue'; // Importar IonIcon
-import { searchOutline } from 'ionicons/icons'; // Importar el ícono de lupa
 export default {
-
   components: {
-    IonIcon, // Registrar el componente IonIcon
+    IonIcon,
   },
   data() {
     return {
       searchOutline,
-      showSearch: false, // Controla la visibilidad del panel de búsqueda
-      searchQuery: "", // Almacena el término de búsqueda
-      frequentOptions: ["Zapatillas", "Camisetas", "Pantalones", "Accesorios", "Ofertas"], // Opciones de búsqueda más populares
+      showSearch: false,
+      searchQuery: "",
+      frequentOptions: ["Zapatillas", "Camisetas", "Pantalones", "Accesorios", "Ofertas"],
     };
   },
   methods: {
-    // Alternar la visibilidad del panel de búsqueda
     toggleSearch() {
       this.showSearch = !this.showSearch;
     },
-    // Establecer el término de búsqueda desde las opciones frecuentes
     setSearchQuery(option) {
       this.searchQuery = option;
       this.performSearch();
     },
-    // Realizar la búsqueda
     performSearch() {
       console.log("Buscando:", this.searchQuery);
     },
@@ -69,6 +65,7 @@ export default {
 </script>
 
 <style scoped>
+/* Botón de búsqueda */
 .search-button {
   background-color: rgb(47, 46, 61);
   border-radius: 20px;
@@ -77,25 +74,28 @@ export default {
   display: flex;
   align-items: center;
   width: 15em;
-
 }
+
+/* Texto del botón */
 .search-text {
-  color: #f5f5f5; /* Texto azul */
+  color: #f5f5f5;
   font-size: 1.4em;
 }
 
+/* Ícono de búsqueda */
 .search-icon {
   margin-left: 10px;
   font-size: 2em;
-  color: #007bff; /* Azul para el ícono */
+  color: #007bff;
 }
 
+/* Panel de búsqueda */
 .search-panel {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #003366; /* Fondo azul oscuro */
+  background-color: #003366;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -104,26 +104,29 @@ export default {
   z-index: 1000;
 }
 
+/* Contenedor de la barra de búsqueda */
 .search-container {
   display: flex;
   width: 100%;
-  max-width: 600px; /* Barra de búsqueda larga */
+  max-width: 600px;
   margin-bottom: 10px;
 }
 
+/* Input de búsqueda */
 .search-input {
   flex: 1;
   padding: 10px;
-  border: 2px solid #007bff; /* Borde azul */
+  border: 2px solid #007bff;
   border-radius: 4px;
   font-size: 1rem;
   outline: none;
 }
 
 .search-input::placeholder {
-  color: #007bff; /* Placeholder azul */
+  color: #007bff;
 }
 
+/* Botón de cierre */
 .close-button {
   background-color: transparent;
   border: none;
@@ -133,15 +136,18 @@ export default {
   margin-left: 10px;
 }
 
+/* Opciones frecuentes */
 .frequent-options {
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap; /* Permite que los botones se ajusten en varias líneas */
 }
 
+/* Botones de opciones frecuentes */
 .frequent-button {
-  background-color: white; /* Botones blancos */
-  color: #003366; /* Texto azul oscuro */
+  background-color: white;
+  color: #003366;
   border: none;
   padding: 8px 16px;
   font-size: 0.9rem;
@@ -151,9 +157,120 @@ export default {
 }
 
 .frequent-button:hover {
-  background-color: #e0e0e0; /* Efecto hover sutil */
+  background-color: #e0e0e0;
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .search-button {
+    width: 12em; /* Reduce el ancho en tablets */
+  }
 
+  .search-container {
+    max-width: 500px; /* Ajusta la barra de búsqueda */
+  }
+}
+
+@media (max-width: 768px) {
+  .search-button {
+    width: 10em; /* Más compacto */
+    gap: 15px; /* Reduce el espacio entre elementos */
+  }
+
+  .search-text {
+    font-size: 1.2em; /* Reduce ligeramente el texto */
+  }
+
+  .search-icon {
+    font-size: 1.8em; /* Ajusta el ícono */
+  }
+
+  .search-panel {
+    padding: 15px; /* Reduce el padding */
+  }
+
+  .search-container {
+    max-width: 400px; /* Barra más estrecha */
+  }
+
+  .search-input {
+    padding: 8px; /* Reduce el padding del input */
+  }
+
+  .close-button {
+    font-size: 20px; /* Reduce el tamaño del botón de cierre */
+  }
+
+  .frequent-button {
+    padding: 6px 12px; /* Botones más pequeños */
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-button {
+    width: 8em; /* Más pequeño para móviles */
+    gap: 10px;
+  }
+
+  .search-text {
+    font-size: 1em;
+  }
+
+  .search-icon {
+    margin-left: 5px;
+    font-size: 1.5em;
+  }
+
+  .search-panel {
+    padding: 10px;
+  }
+
+  .search-container {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 0 10px;
+  }
+
+  .search-input {
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+
+  .close-button {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  .frequent-options {
+    gap: 5px; /* Reduce el espacio entre botones */
+  }
+
+  .frequent-button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .search-button {
+    width: 7em;
+  }
+
+  .search-text {
+    font-size: 0.9em;
+  }
+
+  .search-icon {
+    font-size: 1.3em;
+  }
+
+  .search-input {
+    font-size: 0.85rem;
+  }
+
+  .frequent-button {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+}
 </style>
-

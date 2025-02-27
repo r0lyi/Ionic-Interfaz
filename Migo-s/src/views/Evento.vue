@@ -1,6 +1,5 @@
 <template>
     <ion-page>
-      <Banner class="banner" />
       <Header class="header" />
       
       <ion-content>
@@ -15,7 +14,6 @@
   import Productos from '@/components/Productos.vue';
   
   import Header from '@/components/Header.vue';
-  import Banner from '@/components/Banner.vue';
   import Footer from '@/components/Footer.vue';
   import Eventos from '@/components/Eventos.vue';
 
@@ -27,7 +25,7 @@
       IonPage,
       IonContent,
       Header,
-      Banner,
+     
       Footer,
       Productos,
       Eventos
@@ -39,12 +37,10 @@
   <style scoped>
  
   
-  .header {
-    margin-top: 30px;
-  }
+  
   
   ion-content {
-    --background: #fafafa;
+    --background: #5096e6;
   }
   
   

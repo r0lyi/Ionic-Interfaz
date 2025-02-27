@@ -1,143 +1,111 @@
 <template>
-    <ion-page>
-      
-      <ion-content >
-        <div class="login-container">
-          <div class="form-container">
-            <h2 class="form-title">Iniciar Sesión</h2>
-            <h3>Inicia secion con tu cuenta Migos</h3>
-
-            <ion-item lines="none" class="custom-input">
-              <ion-label position="floating">Correo electrónico</ion-label>
-              <ion-input type="email" v-model="email"></ion-input>
-            </ion-item>
-  
-            <ion-item lines="none" class="custom-input">
-              <ion-label position="floating">Contraseña</ion-label>
-              <ion-input type="password" v-model="password"></ion-input>
-            </ion-item>
-  
-            <ion-button expand="full" class="icon-button" @click="login">
-              Iniciar sesión
-            </ion-button>
-
-            <h3>¿Haz olvidado tu contraseña?</h3>
-            <h3>¿Eres nuevo en Migo-s?  <a href="Register">Registrate</a></h3>
-
-
-          </div>
+  <ion-page>
+    <Header class="header" />
+    
+    <ion-content>
+      <!-- Sección de fondo con imagen -->
+      <div class="imagen_fondo">
+        <div class="contenido">
+          <h1>¡Prepárate y personaliza tu equipación!</h1>
+          <p>Ahora con Migo-S puedes crear tu propia equipación y recibir descuentos por crear tu equipación. Pon el número y el nombre de la equipación y ¡Calienta para salir a jugar!</p>
         </div>
-      </ion-content>
-    </ion-page>
-  </template>
-  
-  <script>
-  import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonItem, IonLabel, IonInput, IonButton } from '@ionic/vue';
-  
-  export default {
-    components: {
-      IonPage,
-      IonHeader,
-      IonToolbar,
-      IonTitle,
-      IonContent,
-      IonItem,
-      IonLabel,
-      IonInput,
-      IonButton,
-    },
-    data() {
-      return {
-        email: '',
-        password: '',
-      };
-    },
-    methods: {
-      login() {
-        // Lógica para manejar el login
-        console.log('Email:', this.email);
-        console.log('Password:', this.password);
-      },
-    },
-  };
-  </script>
-  
-  <style scoped>
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Fondo degradado */
-  }
-  
-  .form-container {
-    
-    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    height: 50em;
-    width: 30em;
+      </div>
 
-  }
-  
-  .form-title {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
-  
-  .custom-input {
-    --background: transparent; /* Fondo transparente */
-    --border-width: 0;
-    --border-style: none;
-    --border-color: transparent;
-    --padding-start: 0;
-    --inner-padding-end: 0;
-    margin-bottom: 30px;
-  }
-  
-  .custom-input ion-label {
-    color: #3880ff; /* Color azul para el label */
-    margin-bottom: 20px;
-  }
-  
-  .custom-input ion-input {
-    background: transparent; /* Fondo transparente */
-    border-bottom: 2px solid #3880ff; /* Línea azul en la parte inferior */
-    --padding-start: 0;
-    --padding-end: 0;
-    color: white; /* Color del texto */
-  }
-  
-  .custom-input ion-input:focus {
-    border-bottom: 2px solid #1a4f8b; /* Cambia el color de la línea al enfocar */
-  }
-  
-  .icon-button {
-    --background: transparent;
-    --background-hover: transparent;
-    --color: white;
-    --color-hover: rgba(255, 255, 255, 0.8);
-    border: 2px solid #3880ff; /* Borde azul */
-    border-radius: 25px; /* Bordes redondeados */
-    margin-top: 20px;
-  }
-  
-  .icon-button:hover {
-    --background: rgba(56, 128, 255, 0.1); /* Fondo semitransparente al pasar el mouse */
-    --color: rgba(255, 255, 255, 0.8); /* Color del texto al pasar el mouse */
-  }
+      <!-- Sección de camisas -->
+      <camisas class="containerEventos" />
 
+      <!-- Footer -->
+      <Footer />
+    </ion-content>
+  </ion-page>
+</template>
 
-/* Cambiar el fondo de la vista a blanco */
-ion-content {
-    
-  --background: #fafafa; /* Fondo blanco */
-  
+<script>
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
+import camisas from '@/components/camisas.vue';
+import { IonPage, IonContent } from '@ionic/vue';
+
+export default {
+  components: {
+    IonPage,
+    IonContent,
+    Header,
+    Footer,
+    camisas,
+  },
+};
+</script>
+
+<style scoped>
+/* Fondo con imagen */
+.imagen_fondo {
+  height: 40em; /* Altura fija para que la imagen sea grande */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  background-image: url('https://cdn.pixabay.com/photo/2019/03/03/16/32/sport-4032242_640.jpg'); /* Ruta de tu imagen */
+  background-size: cover; /* La imagen cubre todo el div */
+  background-position: center; /* Centra la imagen */
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  position: relative; /* Para el overlay */
 }
-  </style>
+
+/* Overlay oscuro para mejorar la legibilidad del texto */
+.imagen_fondo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+  z-index: 1;
+}
+
+/* Contenido centrado sobre la imagen */
+.contenido {
+  text-align: center; /* Centra el texto dentro del contenedor */
+  color: white; /* Color blanco para que destaque sobre la imagen */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados para un mejor diseño */
+  z-index: 2; /* Asegura que el contenido esté sobre el overlay */
+  max-width: 800px; /* Ancho máximo para el contenido */
+  margin: 0 auto; /* Centrar el contenido */
+}
+
+/* Estilo del título */
+h1 {
+  font-size: 2.5em; /* Tamaño grande para que el título destaque */
+  margin-bottom: 20px; /* Espacio entre título y descripción */
+  font-weight: bold; /* Negrita para mayor impacto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+}
+
+/* Estilo de la descripción */
+p {
+  font-size: 1.2em; /* Tamaño legible para la descripción */
+  line-height: 1.6; /* Espaciado entre líneas */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+  .imagen_fondo {
+    height: 30em; /* Reducir la altura en móviles */
+  }
+
+  h1 {
+    font-size: 2em; /* Tamaño más pequeño para móviles */
+  }
+
+  p {
+    font-size: 1em; /* Tamaño más pequeño para móviles */
+  }
+}
+
+/* Fondo del contenido principal */
+ion-content {
+  --background: #f4f4f4; /* Color de fondo claro */
+}
+</style>

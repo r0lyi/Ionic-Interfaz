@@ -5,7 +5,7 @@
       <p>
         <a href="" class="login-button">Busca una tienda</a> |
         <a href="" class="login-button">Conocenos</a>   |
-        <a href="" class="login-button">Register</a>   |
+        <a href="/Register" class="login-button">Register</a>   |
         <a href="/Login" class="login-button">Login</a>   |
 
       </p>

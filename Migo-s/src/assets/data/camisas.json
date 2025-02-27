@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "Camiseta de Fútbol Adidas",
+    "descripcion": "Camiseta oficial del equipo nacional, fabricada con tecnología de ventilación para mantenerte fresco.",
+    "precio": 29.99,
+    "imagen": "https://ejemplo.com/imagenes/camiseta-adidas.jpg",
+    "talla": "M"
+  },
+  {
+    "titulo": "Camiseta de Baloncesto Nike",
+    "descripcion": "Camiseta ligera y transpirable, ideal para entrenamientos intensos y partidos.",
+    "precio": 34.99,
+    "imagen": "https://ejemplo.com/imagenes/camiseta-nike-baloncesto.jpg",
+    "talla": "L"
+  },
+  {
+    "titulo": "Camiseta de Running Under Armour",
+    "descripcion": "Diseñada para corredores, con tejido que absorbe la humedad y secado rápido.",
+    "precio": 24.99,
+    "imagen": "https://ejemplo.com/imagenes/camiseta-under-armour-running.jpg",
+    "talla": "S"
+  },
+  {
+    "titulo": "Camiseta de Tenis Wilson",
+    "descripcion": "Camiseta con protección UV, perfecta para jugar al aire libre bajo el sol.",
+    "precio": 39.99,
+    "imagen": "https://ejemplo.com/imagenes/camiseta-wilson-tenis.jpg",
+    "talla": "XL"
+  },
+  {
+    "titulo": "Camiseta de Yoga Lululemon",
+    "descripcion": "Suave y elástica, ideal para sesiones de yoga y pilates, con un ajuste cómodo.",
+    "precio": 49.99,
+    "imagen": "https://ejemplo.com/imagenes/camiseta-lululemon-yoga.jpg",
+    "talla": "M"
+  }
+]
