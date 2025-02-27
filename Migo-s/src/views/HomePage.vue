@@ -1,24 +1,22 @@
 <template>
   <ion-page>
-    <div>
-    <Buscador />
-    <!-- Otros elementos del menú -->
-  </div>
-    <Banner class="banner" />
-  
-    <Header class="header"  />
     
+
 
     <ion-content >
+      <Header class="header"  />
+
         <div class="fondo_img ">
           <SliderInit class="Slider" />
+
+          <div class="mensaje-container">
+      <h1 class="mensaje-destacado">¡EMPIEZA A CALENTAR QUE SALES!</h1>
+        </div>
         </div>
 
     
     
-        <div class="mensaje-container">
-      <h1 class="mensaje-destacado">¡EMPIEZA A CALENTAR QUE SALES!</h1>
-        </div>
+      
 
 
       <Contenido class="contenido" />
@@ -43,12 +41,10 @@
 <script>
 import { IonPage, IonContent } from '@ionic/vue';
 import Header from '@/components/Header.vue';
-import Banner from '@/components/Banner.vue';
 import SliderInit from '@/components/SliderInit.vue';
 import Contenido from '@/components/Contenido.vue';
 import Productos from '@/components/Productos.vue';
 import Footer from '@/components/Footer.vue';
-import Buscador from "@/components/Buscador.vue";
 
 
 
@@ -61,12 +57,11 @@ export default {
     IonPage,
     IonContent,
     Header,
-    Banner,
     SliderInit,
     Contenido,
     Productos,
     Footer,
-    Buscador
+    
     
      
   }
@@ -75,21 +70,8 @@ export default {
 
 <style scoped>
 
-.prueba {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 30px;
-  background: #ff4500;
-  color: white;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
+.Slider{
+  margin-top: 3em;
 }
 
 
@@ -100,14 +82,14 @@ export default {
     justify-content: center;
     align-items: center;
     min-height: 25vh;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: transparent;
     text-align: center;
 }
 
 .mensaje-destacado {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
-    color: #2b2d42;
+    color: #ffffff;
     text-shadow: 3px 3px 0 rgba(43, 45, 66, 0.1);
     position: relative;
     line-height: 1.2;
@@ -121,7 +103,7 @@ export default {
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 120px;
+    width: 10em ;
     height: 4px;
     background: #ef233c;
     border-radius: 2px;
@@ -155,26 +137,26 @@ export default {
 
 
 
-/* Estilos específicos para la página Home */
-.header {
-  margin-top: 30px; /* Asegura que el contenido no se solape con el banner */
-}
+
 
 ion-content {
+  --background: #2b2828; /* Fondo blanco */
   text-align: center;
   padding: 30px;
 }
 
 .fondo_img {
+ 
   display: flex;
+  flex-direction: column;
+
   align-items: center;
-  justify-content: center;
   background-image: url("/images/fondo.jpg"); /* Ruta de la imagen */
   background-size: cover; /* Cubre todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-attachment: fixed; /* Fija la imagen al desplazarse (opcional) */
-  height: 40em; /* Altura del 100% del viewport */
+  height: 60em; /* Altura del 100% del viewport */
   width: 100%; /* Ancho del 100% del contenedor */
   position: relative; /* Para posicionar elementos hijos */
   z-index: 1; /* Asegura que esté por encima de otros elementos */
@@ -195,10 +177,7 @@ ion-content {
 
 
 /* Cambiar el fondo de la vista a blanco */
-ion-content {
-  --background: #fafafa; /* Fondo blanco */
-  
-}
+
 
 
 </style>

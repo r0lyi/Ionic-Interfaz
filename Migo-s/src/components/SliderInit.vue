@@ -13,8 +13,8 @@
         :style="{ backgroundImage: `url(${item.image})` }"
       >
         <div class="content-overlay">
-          <h2 class="slide-title">{{ item.title }}</h2>
-          <p class="slide-description">{{ item.description }}</p>
+          <h2 class="slide-description">{{ item.description }}</h2>
+         
         </div>
       </swiper-slide>
     </swiper>
@@ -82,6 +82,8 @@ export default {
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+  
+  
 }
 
 .mySwiper {
@@ -132,24 +134,26 @@ export default {
   opacity: 1;
 }
 
-.slide-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 1px;
-}
 
 .slide-description {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  font-weight: 300;
-  opacity: 0.9;
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna y legible */
+    font-weight: 700; /* Negrita para mayor impacto */
+    color: #ffffff; /* Texto blanco para contraste */
+    text-align: center; /* Centrado para equilibrio visual */
+    background: transparent; /* Fondo degradado moderno */
+    padding: 20px 30px; /* Espaciado interno para comodidad visual */
+    border-radius: 15px; /* Bordes redondeados para un look suave */
+    display: inline-block; /* Para que el fondo se ajuste al texto */
+    margin: 0 auto; /* Centrar el elemento en el panel */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra exterior para resaltar */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto hover suave */
+    max-width: 90%; /* Limita el ancho para evitar que el texto se estire demasiado */
 }
 
+.slide-description:hover {
+    transform: scale(1.05); /* Ligero aumento al pasar el mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al interactuar */
+}
 /* Personalización de la navegación */
 :deep(.swiper-button-next),
 :deep(.swiper-button-prev) {
@@ -182,7 +186,7 @@ export default {
   border: 2px solid transparent;
   
   &.swiper-pagination-bullet-active {
-    background: #FF6B6B !important;
+    background: #0011ff !important;
     transform: scale(1.3);
     box-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
     border-color: white;
@@ -204,6 +208,10 @@ export default {
   .slider-container {
     border-radius: 0;
   }
+  .slide-description {
+        font-size: 24px; /* Reducir el tamaño de la fuente */
+        padding: 15px 25px; /* Reducir el padding */
+    }
   
   .mySwiper {
     height: 400px;
@@ -213,13 +221,9 @@ export default {
     padding: 20px;
   }
   
-  .slide-title {
-    font-size: 2rem;
-  }
+ 
   
-  .slide-description {
-    font-size: 1rem;
-  }
+
   
   :deep(.swiper-button-next),
   :deep(.swiper-button-prev) {

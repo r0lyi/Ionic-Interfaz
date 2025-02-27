@@ -39,7 +39,7 @@ export default {
   gap: 2rem;
   padding: 1rem 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background:#0f0f0f ;
 }
 
 .card {
@@ -71,14 +71,18 @@ export default {
 }
 
 .eventos {
+  
+  border: 3px solid blue;
   background: url('https://cdn.pixabay.com/photo/2016/11/29/07/06/bleachers-1867992_1280.jpg') center/cover no-repeat;
 }
 
 .personal {
+  border: 3px solid blue;
   background: url('https://cdn.pixabay.com/photo/2019/11/02/16/53/football-4596824_1280.jpg') center/cover no-repeat;
 }
 
 .salud {
+  border: 3px solid blue;
   background: url('https://cdn.pixabay.com/photo/2023/10/04/14/15/man-8293794_1280.jpg') center/cover no-repeat;
 }
 

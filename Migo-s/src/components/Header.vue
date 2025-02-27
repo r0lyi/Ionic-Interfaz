@@ -1,191 +1,196 @@
 <template>
-    <ion-header>
-      <ion-toolbar>
-  
-        <div class="Contenedor_Menu">
-  
-       <div class="left">
-        <ion-title>Inicio</ion-title>
+  <ion-header>
+    <div class="banner">
+      <p>¡Últimas noticias! Suscríbete para recibir actualizaciones.</p>
+      <p>
+        <a href="" class="login-button">Busca una tienda</a> |
+        <a href="" class="login-button">Conocenos</a>   |
+        <a href="" class="login-button">Register</a>   |
+        <a href="/Login" class="login-button">Login</a>   |
+
+      </p>
+    </div>
+
+    <ion-toolbar>
+      <div class="contenedor-menu">
+        <!-- Menú de hamburguesa (solo visible en móviles) -->
+        <div class="hamburguesa" @click="toggleMenu">
+          <ion-icon :icon="menuOutline"></ion-icon>
         </div>
-  
-  
-  
-  
-        <div class="menu_opcions bg-transparent py-3">
-    <div class="center flex justify-center gap-8">
-      <ion-button @click="navigateTo('/Deportes')" fill="clear" class="menu-button">
-        <ion-label class="text-white hover:text-gray-200 transition-colors duration-300">Deportes</ion-label>
-      </ion-button>
 
-      <ion-button @click="navigateTo('/Hombre')" fill="clear" class="menu-button">
-        <ion-label class="text-white hover:text-gray-200 transition-colors duration-300">Hombre</ion-label>
-      </ion-button>
+        <!-- Título (centrado en móviles) -->
+        <div class="left">
+        <img src="/images/Logo Migos.png" alt="Logo" class="logo">
+        </div>
 
-      <ion-button @click="navigateTo('/Mujer')" fill="clear" class="menu-button">
-        <ion-label class="text-white hover:text-gray-200 transition-colors duration-300">Mujer</ion-label>
-      </ion-button>
+        <!-- Menú de opciones (oculto en móviles, visible en desktop) -->
+        <div class="menu-opciones" :class="{ 'active': menuActive }">
+          <ion-button @click="navigateTo('/Deportes')" fill="clear" class="menu-button">
+            <ion-label>Deportes</ion-label>
+          </ion-button>
+          <ion-button @click="navigateTo('/Hombre')" fill="clear" class="menu-button">
+            <ion-label>Hombre</ion-label>
+          </ion-button>
+          <ion-button @click="navigateTo('/Mujer')" fill="clear" class="menu-button">
+            <ion-label>Mujer</ion-label>
+          </ion-button>
+          <ion-button @click="navigateTo('/Ofertas')" fill="clear" class="menu-button">
+            <ion-label>Ofertas</ion-label>
+          </ion-button>
+        </div>
 
-      <ion-button @click="navigateTo('/Ofertas')" fill="clear" class="menu-button">
-        <ion-label class="text-white hover:text-gray-200 transition-colors duration-300">Ofertas</ion-label>
-      </ion-button>
-    </div>
-  </div>
-                  
-  
-  
-  
-        <div class="right ">
-          <!-- Contenedor del buscador -->
+        <!-- Buscador e iconos (derecha) -->
+        <div class="right">
+          <div class="buscador">
+            <template v-if="searchExpanded">
 
-        <div class="buscador">
-          <ion-searchbar class="custom-searchbar"  placeholder=" "></ion-searchbar>
+              <Buscador ></Buscador>
+            </template>
+            <template v-else>
+              <ion-button @click="toggleSearch" fill="clear">
+                <ion-icon :icon="searchOutline"></ion-icon>
+              </ion-button>
+            </template>
+          </div>
+
+          <div class="iconos">
+            <ion-button @click="navigateTo('/gustos')" fill="clear" class="icon-button">
+              <ion-icon :icon="heartOutline" class="icon"></ion-icon>
+            </ion-button>
+            <ion-button @click="navigateTo('/carrito')" fill="clear" class="icon-button">
+              <ion-icon :icon="cartOutline" class="icon"></ion-icon>
+            </ion-button>
+            <ion-button @click="navigateTo('/user')" fill="clear" class="icon-button">
+              <ion-icon :icon="personOutline" class="icon"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
       </div>
+    </ion-toolbar>
+  </ion-header>
+</template>
 
-    <!-- Contenedor de los iconos -->
-    <div class="iconos">
-      <!-- Icono de corazón (gustos) -->
-      <ion-button @click="navigateTo('/gustos')" fill="clear" class="icon-button p-0">
-        <ion-icon :icon="heartOutline" class="text-xl text-white hover:text-gray-200 transition-colors duration-300"></ion-icon>
-      </ion-button>
+<script>
+import Buscador from '@/components/Buscador.vue';
 
-      <!-- Icono de carrito (carrito) -->
-      <ion-button @click="navigateTo('/carrito')" fill="clear" class="icon-button p-0">
-        <ion-icon :icon="cartOutline" class="text-xl text-white hover:text-gray-200 transition-colors duration-300"></ion-icon>
-      </ion-button>
+import { IonHeader, IonToolbar, IonTitle, IonButton, IonIcon, IonSearchbar, IonLabel } from '@ionic/vue';
+import { heartOutline, cartOutline, personOutline, searchOutline, menuOutline } from 'ionicons/icons';
 
-      <!-- Icono de usuario (user) -->
-      <ion-button @click="navigateTo('/user')" fill="clear" class="icon-button p-0">
-        <ion-icon :icon="personOutline" class="text-xl text-white hover:text-gray-200 transition-colors duration-300"></ion-icon>
-      </ion-button>
-    </div>
-  </div>
-  
-  
-  
-    </div>
-  
-      </ion-toolbar>
-    </ion-header>
-  </template>
-  
-  <script>
-  import { IonHeader, IonToolbar, IonTitle, IonButtons, IonButton, IonIcon } from '@ionic/vue';
-  import {
-    heartOutline,
-    cartOutline,
-    personOutline,
-  } from "ionicons/icons";
-  export default {
-    components: {
-      IonHeader,
-      IonToolbar,
-      IonTitle,
-      IonButtons,
-      IonButton,
-      IonIcon
-    },
-   
-
-    data() {
-      return {
-        heartOutline,
-        cartOutline,
-        personOutline,
-      };
+export default {
+  components: {
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonButton,
+    IonIcon,
+    IonSearchbar,
+    IonLabel,
+    Buscador
+  },
+  data() {
+    return {
+      heartOutline,
+      cartOutline,
+      personOutline,
+      searchOutline,
+      menuOutline,
+      searchExpanded: false,
+      menuActive: false, // Controla si el menú de hamburguesa está activo
+    };
+  },
+  mounted() {
+    if (window.innerWidth > 768) {
+      this.searchExpanded = true;
     }
-  
-  
-  };
-  </script>
-  
-  <style scoped>
-.Contenedor_Menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 16px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-
-  }  /* -------------------------------- */
-
-      /* Estilos personalizados para el buscador */
-      .custom-searchbar {
-        width: 150px; /* Ancho reducido */
-        overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
-        border-top-left-radius:50px ;
-        border-top-right-radius:50px  ;
-        border-bottom-left-radius: 50px ;
-        border-bottom-right-radius: 50px ;
-        color: white;
-
-
-      }
-
-      /* Anular estilos internos del ion-searchbar */
-      .custom-searchbar .searchbar-input-container {
-        border-top-left-radius:50px ;
-        border-top-right-radius:50px  ;
-        border-bottom-left-radius: 50px ;
-        border-bottom-right-radius: 50px ;
-        color: white;
-
-      }
-
-      .custom-searchbar .searchbar-input {
-        border-top-left-radius:50px ;
-        border-top-right-radius:50px  ;
-        border-bottom-left-radius: 50px ;
-        border-bottom-right-radius: 50px ;
-        color: white;
-
-      }
-
-  .right{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 300px;
+  },
+  methods: {
+    navigateTo(path) {
+      this.$router.push(path);
+      this.menuActive = false; // Cierra el menú al navegar
+    },
+    toggleSearch() {
+      this.searchExpanded = !this.searchExpanded;
+    },
+    toggleMenu() {
+      this.menuActive = !this.menuActive; // Abre/cierra el menú de hamburguesa
+    }
   }
+};
+</script>
 
-  .buscador{
-    width: 300px;
-    background-color: transparent;
-    border-top-right-radius: 20px;  
-    border-bottom-right-radius: 20px;
-  }
-
-
-  .iconos{
-    display: flex;
-    align-items: center;
-    color: black;
-   
-  }
-
-   
-
-
-/* Efecto hover para los iconos */
-.icon-button {
-  --background: transparent;
-  --background-hover: transparent;
-  --color: black;
-  --color-hover: rgba(255, 255, 255, 1.8);
-  
-
+<style scoped>
+/* Banner Superior */
+.banner {
+  background-color: rgb(25, 25, 32);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
 }
 
-  
-  
-  /**------------------------------------ */
-  /* Contenedor principal del menú */
-/* Efecto de subrayado personalizado */
+.banner p {
+  margin: 0;
+}
+
+
+
+
+
+/* Contenedor del Menú */
+.contenedor-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-image:url('https://img.freepik.com/vector-gratis/fondo-abstracto-azul_1393-339.jpg');
+  background-size: cover; /* Cubre todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen al desplazarse (opcional) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 8em;
+}
+
+/* Título */
+.left {
+  display: flex;
+  align-items: center;
+}
+.left img.logo {
+  max-width: 150px; /* Tamaño máximo del logo en desktop */
+  height: auto; /* Mantiene la proporción de la imagen */
+  transition: transform 0.3s ease; /* Efecto de transición al hacer hover */
+}
+
+/* Efecto al pasar el mouse sobre el logo */
+.left img.logo:hover {
+  transform: scale(1.05); /* Escala ligeramente el logo al hacer hover */
+}
+/* Menú de hamburguesa (oculto en desktop) */
+.hamburguesa {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #003366;
+}
+
+/* Menú Opciones */
+.menu-opciones {
+  display: flex;
+  gap: 20px;
+}
+
 .menu-button {
   position: relative;
-  padding: 8px 0; /* Espaciado interno */
-  font-size: 1rem;
-
+  padding: 10px 0;
+  color: #003366;
+  font-size: 1.1em;
 }
 
 .menu-button::after {
@@ -195,30 +200,114 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background: white; /* Color de la línea */
-  transition: width 0.3s ease; /* Transición suave */
+  background: #007BFF;
+  transition: width 0.3s ease;
 }
 
 .menu-button:hover::after {
-  width: 100%; /* Línea subrayada al hacer hover */
+  width: 100%;
 }
-  /* Estilos específicos para el componente Header ---------------*/
-  
-  
-  
-  ion-toolbar {
-    --background: #c5cbd6;
-    --color: white;
-  }
-  
-  ion-title {
-    font-size: 1.5rem;
-  }
-  
-  
 
-  
-  
-  
-  
-  </style>
+/* Buscador */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buscador {
+margin-right: 20px;
+  width: 230px;
+}
+
+/* Iconos */
+.iconos {
+  margin-right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-button {
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.icon {
+  font-size: 2em;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.icon-button:hover .icon {
+  color: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .login-button {
+    margin-top: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+
+  .contenedor-menu {
+    padding: 0 10px;
+  }
+
+  .hamburguesa {
+    display: block; /* Muestra el ícono de hamburguesa */
+  }
+
+  .menu-opciones {
+    display: none; /* Oculta el menú en móviles por defecto */
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .menu-opciones.active {
+    display: flex; /* Muestra el menú cuando está activo */
+  }
+
+  .menu-button {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+  }
+
+  .right {
+    margin-left: auto; /* Mueve el buscador e iconos a la derecha */
+  }
+
+  .buscador {
+    width: 100%;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .left img.logo {
+    max-width: 120px; /* Tamaño más pequeño para tablets */
+  }
+
+}
+@media (max-width: 480px) {
+  .left img.logo {
+    max-width: 100px; /* Tamaño más pequeño para móviles */
+  }
+}
+</style>
