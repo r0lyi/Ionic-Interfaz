@@ -3,35 +3,30 @@
       "titulo": "Shorts de Fútbol Nike",
       "descripcion": "Pantalones cortos ligeros y transpirables, ideales para entrenamientos y partidos de fútbol.",
       "precio": 24.99,
-      "imagen": "https://ejemplo.com/imagenes/shorts-nike-futbol.jpg",
-      "talla": "M"
-    },
+      "imagen": "https://deportesconestilo.com/wp-content/uploads/2023/01/pantalon-sketch.png",
+"talla": ["S", "M", "L", "X"]     },
     {
       "titulo": "Shorts de Running Adidas",
       "descripcion": "Diseñados para corredores, con tecnología de absorción de humedad y bolsillos laterales.",
       "precio": 29.99,
-      "imagen": "https://ejemplo.com/imagenes/shorts-adidas-running.jpg",
-      "talla": "L"
-    },
+      "imagen": "https://deportesconestilo.com/wp-content/uploads/2023/01/pantalon-wave.png",
+"talla": ["S", "M", "L", "X"]     },
     {
       "titulo": "Shorts de Baloncesto Under Armour",
       "descripcion": "Pantalones cortos con ajuste holgado para mayor libertad de movimiento en la cancha.",
       "precio": 34.99,
-      "imagen": "https://ejemplo.com/imagenes/shorts-under-armour-baloncesto.jpg",
-      "talla": "XL"
-    },
+      "imagen": "https://deportesconestilo.com/wp-content/uploads/2023/01/pantalon-bubble.png",
+"talla": ["S", "M", "L", "X"]     },
     {
       "titulo": "Shorts de Tenis Wilson",
       "descripcion": "Shorts con protección UV y bolsillos profundos para guardar pelotas de tenis.",
       "precio": 39.99,
-      "imagen": "https://ejemplo.com/imagenes/shorts-wilson-tenis.jpg",
-      "talla": "S"
-    },
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYhH80onxY_VuN9zCiLXVrfTXQtxX5ZW9w3HAUdAuhDt8oOCeloKAM-SnDIWgayBLpLW4&usqp=CAU",
+"talla": ["S", "M", "L", "X"]     },
     {
       "titulo": "Shorts de Yoga Lululemon",
       "descripcion": "Suaves y elásticos, perfectos para yoga y pilates, con un ajuste cómodo y cintura alta.",
       "precio": 44.99,
-      "imagen": "https://ejemplo.com/imagenes/shorts-lululemon-yoga.jpg",
-      "talla": "M"
-    }
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_xqgw8p1nn7P-niSBxOIltmvNV79jmrXf_XTSlyYlEM87y3Pn7N2RQj0b1MH3Adas-cg&usqp=CAU",
+"talla": ["S", "M", "L", "X"]     }
   ]

@@ -1,16 +1,19 @@
 <template>
     <ion-page>
-      <Banner class="banner" />
       <Header class="header" />
   
       <ion-content>
         <div class="contenedor-opinion">
           <!-- Imagen del producto y descripción -->
           <div class="product-section">
-            <img :src="product.image" :alt="product.name" class="product-image" />
+            <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/117386496_01/w=800,h=800,fit=pad"  class="product-image" />
             <div class="product-details">
-              <h1 class="product-name">{{ product.name }}</h1>
-              <p class="product-description">{{ product.description }}</p>
+              <h1 class="product-name">Camiseta Nike Pro</h1>
+              <p class="product-description">La camiseta Nike Pro es una prenda esencial para cualquier deportista que busca rendimiento óptimo en 
+                cada entrenamiento. Confeccionada con una mezcla de poliéster reciclado y elastano, esta camiseta ofrece un ajuste ceñido que se adapta 
+                perfectamente al cuerpo sin sacrificar la libertad de movimiento.
+
+              </p>
             </div>
           </div>
   
@@ -75,16 +78,15 @@
   
   <script>
   import Header from "@/components/Header.vue";
-  import Banner from "@/components/Banner.vue";
   import Footer from "@/components/Footer.vue";
   import { IonPage, IonContent } from "@ionic/vue";
   
   export default {
+    name: "Opinion",
     components: {
       IonPage,
       IonContent,
       Header,
-      Banner,
       Footer,
     },
     data() {

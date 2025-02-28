@@ -16,6 +16,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     redirect: '/home'
   },
+
   {
     path: '/home',
     name: 'Home',
@@ -32,9 +33,10 @@ const routes: Array<RouteRecordRaw> = [
     component: Register
   },
   {
-    path: '/InfoProducto',
+    path: '/producto/:id',
     name: 'InfoProducto',
-    component: InfoProducto
+    component: InfoProducto,
+    props: true, // Permite pasar el parámetro :id como prop al componente
   },
   {
     path: '/Gustos',
@@ -47,9 +49,10 @@ const routes: Array<RouteRecordRaw> = [
     component: Evento
   },
   {
-    path: '/InfoEvento',
+    path: '/evento/:id',
     name: 'InfoEvento',
-    component: InfoEvento
+    component: InfoEvento,
+    props: true,
   },
   {
     path: '/Opinion',

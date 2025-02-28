@@ -1,37 +1,35 @@
-[
+
+   
+
+  [
     {
-      "title": "Calcetines de Fútbol Adidas",
-      "description": "Calcetines de alto rendimiento con amortiguación extra en el talón y la punta para mayor comodidad.",
-      "price": "$14.99",
-      "image": "https://ejemplo.com/imagenes/calcetines-adidas-futbol.jpg",
-      "sizes": ["M", "L"]
-    },
+      "titulo": "Calcetines de Fútbol Nike Dri-FIT",
+      "descripcion": "Calcetines con tecnología Dri-FIT para mantener los pies secos, con soporte en el arco para mayor comodidad.",
+      "precio": 14.99,
+      "imagen": "https://shopkappa.com/1446-large_default/medias-balsamaiso-negras.jpg",
+"talla": ["S", "M", "L"]    },
     {
-      "title": "Calcetines de Running Nike",
-      "description": "Diseñados para corredores, con tecnología de absorción de humedad y soporte en el arco del pie.",
-      "price": "$12.99",
-      "image": "https://ejemplo.com/imagenes/calcetines-nike-running.jpg",
-      "sizes": ["S", "M", "L"]
-    },
+      "titulo": "Calcetines de Running Adidas Cushioned",
+      "descripcion": "Calcetines acolchados con zonas de ventilación, ideales para largas distancias y entrenamientos intensos.",
+      "precio": 12.99,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHHv83RCOnDIJnwWKR1RSbhbrrNscz6Kq4KyaOLcTquI8eDSFAwytk0T-0kUtKK1k7eYk&usqp=CAU",
+"talla": ["S", "M", "L"]    },
     {
-      "title": "Calcetines de Baloncesto Under Armour",
-      "description": "Calcetines acolchados para baloncesto, con ventilación estratégica para mantener los pies frescos.",
-      "price": "$16.99",
-      "image": "https://ejemplo.com/imagenes/calcetines-under-armour-baloncesto.jpg",
-      "sizes": ["L", "XL"]
-    },
+      "titulo": "Calcetines Deportivos Puma Performance",
+      "descripcion": "Calcetines de corte medio con refuerzo en el talón y la punta, diseñados para máxima durabilidad.",
+      "precio": 9.99,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCI7w-GRRRTqVw2awGfSCX15XxnF1cSWbaWnMylVt1CjOhUhhflmxn3SxMVyeFE3Pz_d0&usqp=CAU",
+"talla": ["S", "M", "L"]    },
     {
-      "title": "Calcetines de Tenis Wilson",
-      "description": "Calcetines con refuerzo en zonas de alto desgaste, ideales para jugadores de tenis.",
-      "price": "$11.99",
-      "image": "https://ejemplo.com/imagenes/calcetines-wilson-tenis.jpg",
-      "sizes": ["M", "L", "XL"]
-    },
+      "titulo": "Calcetines de Baloncesto Under Armour Elite",
+      "descripcion": "Calcetines altos con amortiguación estratégica y tejido transpirable para un ajuste perfecto en la cancha.",
+      "precio": 17.99,
+      "imagen": "https://www.futbolemotion.com/imagesarticulos/114474/grandes/medias-sp-jugadores-marino-0.webp",
+"talla": ["S", "M", "L"]    },
     {
-      "title": "Calcetines de Yoga Lululemon",
-      "description": "Suaves y antideslizantes, perfectos para yoga y pilates, con agarre en la suela.",
-      "price": "$18.99",
-      "image": "https://ejemplo.com/imagenes/calcetines-lululemon-yoga.jpg",
-      "sizes": ["S", "M"]
-    }
-  ]
+      "titulo": "Calcetines de Entrenamiento Reebok Active",
+      "descripcion": "Calcetines ligeros con costuras planas y tecnología antihumedad, perfectos para cualquier actividad física.",
+      "precio": 11.99,
+      "imagen": "https://contents.mediadecathlon.com/m16477451/k$a83635d1413d18b8b484180319505f26/picture.jpg",
+"talla": ["S", "M", "L"]    }
+]

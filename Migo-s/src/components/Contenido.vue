@@ -40,7 +40,7 @@ export default {
   gap: 2rem;
   padding: 2rem;
   width: 100%;
-  min-height: 100vh;
+  height: 25em;
   background: #0f0f0f;
 }
 

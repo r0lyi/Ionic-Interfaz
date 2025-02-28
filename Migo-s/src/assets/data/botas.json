@@ -1,0 +1,37 @@
+[
+    {
+      "titulo": "Botas de Fútbol Nike Mercurial Vapor",
+      "descripcion": "Botas ligeras diseñadas para velocidad, con placa de tracción para cambios rápidos de dirección.",
+      "precio": 89.99,
+      "imagen": "https://www.base.net/media/catalog/product/0/1/01_ie2610.jpg",
+      "talla": ["40", "41", "42", "43", "44"]
+    },
+    {
+      "titulo": "Botas de Fútbol Adidas Predator Freak",
+      "descripcion": "Botas con tecnología Demonskin para mayor control y efecto en el balón, ideales para jugadores creativos.",
+      "precio": 99.99,
+      "imagen": "https://deportesmanzanedo.com/61287-large_default/botas-futbol-adidas-x-crazyfast-league-ll-fg-ig0622.jpg",
+      "talla": ["40", "41", "42", "43", "44"]
+    },
+    {
+      "titulo": "Botas de Fútbol Puma Future Z",
+      "descripcion": "Botas con ajuste adaptable y banda de compresión para un toque preciso y agilidad en el campo.",
+      "precio": 79.99,
+      "imagen": "https://www.walashop.com/media/catalog/product/n/i/nikefq8394800_1.jpg?quality=80&bg-color=255,255,255&height=900&width=900&canvas=900:900",
+      "talla": ["40", "41", "42", "43", "44"]
+    },
+    {
+      "titulo": "Botas de Fútbol Under Armour Magnetico",
+      "descripcion": "Botas con suela reactiva y upper transpirable, perfectas para partidos intensos.",
+      "precio": 69.99,
+      "imagen": "https://contents.mediadecathlon.com/p2380076/k$e67af4cf282e2ecc9cab1a0fb64ad2b1/sq/botas-de-futbol-clr-fg-alpha-nino-morado.jpg?format=auto&f=800x0",
+      "talla": ["40", "41", "42", "43", "44"]
+    },
+    {
+      "titulo": "Botas de Fútbol Mizuno Morelia Neo",
+      "descripcion": "Botas de cuero premium ultraligeras, diseñadas para un toque clásico y comodidad en el terreno.",
+      "precio": 109.99,
+      "imagen": "https://www.base.net/media/catalog/product/0/1/01_if6919.jpg",
+      "talla": ["40", "41", "42", "43", "44"]
+    }
+]

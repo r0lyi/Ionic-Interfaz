@@ -65,18 +65,46 @@
             </ion-button>
           </div>
         </div>
+        
       </div>
+      <div class="submenu">
+  <swiper
+    :slides-per-view="1"
+    :space-between="0"
+    :loop="true"
+    :autoplay="{ delay: 3000, disableOnInteraction: false }"
+    :navigation="true"
+    :modules="modules"
+    class="submenu-swiper"
+  >
+    <swiper-slide v-for="(phrase, index) in submenuPhrases" :key="index">
+      <span class="submenu-phrase">{{ phrase }}</span>
+    </swiper-slide>
+  </swiper>
+</div>
+
+     
     </ion-toolbar>
   </ion-header>
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 import Buscador from '@/components/Buscador.vue';
 
 import { IonHeader, IonToolbar, IonTitle, IonButton, IonIcon, IonSearchbar, IonLabel } from '@ionic/vue';
 import { heartOutline, cartOutline, personOutline, searchOutline, menuOutline } from 'ionicons/icons';
 
 export default {
+  
+  setup() {
+    return {
+      modules: [Autoplay, Navigation],
+    };
+  },
   components: {
     IonHeader,
     IonToolbar,
@@ -85,10 +113,14 @@ export default {
     IonIcon,
     IonSearchbar,
     IonLabel,
-    Buscador
+    Buscador,Swiper, SwiperSlide
   },
   data() {
     return {
+      submenuPhrases: [' Únete a nuestros eventos deportivos y vive la pasión del deporte en grupo', 
+      'Crea tu estilo único con nuestra personalización de equipamiento', 
+      'Encuentra ropa deportiva de calidad a precios irresistibles',
+       'escubre todo lo que necesitas para tu deporte favorito en un solo lugar'],
       heartOutline,
       cartOutline,
       personOutline,
@@ -119,6 +151,93 @@ export default {
 </script>
 
 <style scoped>
+
+
+/* Contenedor del submenú */
+.submenu {
+  width: 100%;
+  padding: 10px 0;
+  background: #ffffff; /* Fondo blanco */
+  border-top: 2px solid #1e3a8a; /* Borde superior azul oscuro */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Slider Swiper */
+.submenu-swiper {
+  width: 100%;
+  height: 40px; /* Altura del slider */
+  position: relative;
+}
+
+/* Diapositivas */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Frases dentro del slider */
+.submenu-phrase {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e3a8a; /* Azul oscuro */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.submenu-phrase:hover {
+  color: #2b528f; /* Azul más claro al pasar el mouse */
+}
+
+/* Botones de navegación (flechas) */
+:deep(.swiper-button-next),
+:deep(.swiper-button-prev) {
+  color: #1e3a8a; /* Azul oscuro */
+  width: 30px;
+  height: 30px;
+  background: #ffffff; /* Fondo blanco */
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+:deep(.swiper-button-next:hover),
+:deep(.swiper-button-prev:hover) {
+  background: #1e3a8a; /* Fondo azul oscuro al pasar el mouse */
+  color: #ffffff; /* Icono blanco */
+}
+
+/* Estilo para las flechas dentro de los botones */
+:deep(.swiper-button-next::after),
+:deep(.swiper-button-prev::after) {
+  font-size: 1.5rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .submenu-swiper {
+    height: 30px; /* Reducir altura en pantallas pequeñas */
+  }
+  .submenu-phrase {
+    font-size: 1rem; /* Tamaño de fuente más pequeño */
+  }
+  :deep(.swiper-button-next),
+  :deep(.swiper-button-prev) {
+    width: 25px;
+    height: 25px;
+  }
+  :deep(.swiper-button-next::after),
+  :deep(.swiper-button-prev::after) {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .submenu-phrase {
+    font-size: 0.9rem; /* Aún más pequeño para móviles */
+  }
+}
 /* Banner Superior */
 .banner {
   background-color: rgb(25, 25, 32);
@@ -154,7 +273,7 @@ export default {
   background-attachment: fixed; /* Fija la imagen al desplazarse (opcional) */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
-  height: 8em;
+  height: 4em;
 }
 
 /* Título */

@@ -4,9 +4,9 @@
     <h1 class="title">Eventos Destacados</h1>
 
     <!-- Secciones de eventos -->
-    <div 
-      v-for="(event, index) in items" 
-      :key="index" 
+    <div
+      v-for="(event, index) in items"
+      :key="event.id || index"
       class="event-section"
       :class="{ 'reverse': index % 2 !== 0 }"
     >
@@ -15,11 +15,11 @@
       </div>
       <div class="event-details">
         <h2>{{ event.title }}</h2>
-        <p class="event-date">{{ event.date }}</p>
+        <p class="event-date">{{ event.fecha }}</p>
         <p class="event-description">{{ event.description }}</p>
         <!-- Botón de Registro -->
-        <button class="register-button" @click="registerEvent(event)">
-          Registrarse al evento
+        <button class="register-button" @click="navigateToEvent(event.id)">
+          ¡Únete!
         </button>
       </div>
     </div>
@@ -28,24 +28,35 @@
 
 <script>
 import { ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router';
 
 export default {
   setup() {
+    const router = useRouter();
     const items = ref([]);
 
     onMounted(async () => {
-      const response = await import('@/assets/data/Eventos.json');
-      items.value = response.default;
+      try {
+        const response = await import('@/assets/data/Eventos.json');
+        items.value = response.default.map((item, index) => ({
+          id: item.id !== undefined ? item.id : index, // Asegura que cada evento tenga un ID
+          title: item.title,
+          description: item.description,
+          image: item.image,
+          fecha: item.Caracteristicas_evento.fecha, // Mapea Caracteristicas_evento.fecha a fecha
+        }));
+      } catch (error) {
+        console.error('Error al cargar eventos:', error);
+      }
     });
 
-    const registerEvent = (event) => {
-      console.log(`Registrándose al evento: ${event.title}`);
-      // Aquí puedes redirigir a una página de registro o abrir un modal
+    const navigateToEvent = (eventId) => {
+      router.push(`/evento/${eventId}`);
     };
 
     return {
       items,
-      registerEvent,
+      navigateToEvent,
     };
   },
 };
@@ -56,7 +67,7 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
-  background: linear-gradient(135deg, #f3e8ff, #dbeafe); /* Degradado morado a azul */
+  background: linear-gradient(135deg, #f3e8ff, #dbeafe);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -65,7 +76,7 @@ export default {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #4c1d95; /* Morado oscuro */
+  color: #4c1d95;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -92,6 +103,10 @@ export default {
   flex-direction: row-reverse;
 }
 
+.event-image {
+  flex: 0 0 400px; /* Limita el ancho de la imagen a 400px */
+}
+
 .event-image img {
   width: 100%;
   height: auto;
@@ -112,13 +127,13 @@ export default {
 .event-details h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #4c1d95; /* Morado oscuro */
+  color: #4c1d95;
   font-weight: 600;
 }
 
 .event-date {
   font-size: 1rem;
-  color: #1e40af; /* Azul oscuro */
+  color: #1e40af;
   margin-bottom: 15px;
   font-style: italic;
 }
@@ -131,7 +146,7 @@ export default {
 }
 
 .register-button {
-  background: #6b21a8; /* Morado intenso */
+  background: #6b21a8;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -144,16 +159,15 @@ export default {
 }
 
 .register-button:hover {
-  background: #4c1d95; /* Morado más oscuro en hover */
+  background: #4c1d95;
   transform: scale(1.05);
 }
 
 .register-button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px #a78bfa; /* Anillo de foco en morado claro */
+  box-shadow: 0 0 0 3px #a78bfa;
 }
 
-/* Media Queries para Responsividad */
 @media (max-width: 1024px) {
   .event-section {
     flex-direction: column;
@@ -164,9 +178,14 @@ export default {
     flex-direction: column;
   }
 
-  .event-image img {
+  .event-image {
+    flex: 0 0 auto;
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .event-image img {
+    width: 100%;
   }
 
   .event-details {

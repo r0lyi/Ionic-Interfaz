@@ -1,42 +1,232 @@
 [
-    {
-      "name": "Zapatillas Nike Air Max",
-      "price": "$120.00",
-      "image": "https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/0083d873-114c-4a76-9dd3-82aa3c1b168f/AIR+MAX+DN.png"
-    },
-    {
-      "name": "Balón de Fútbol Adidas",
-      "price": "$25.00",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/21b60dc2-5596-4564-86ff-6ee679f4aaa3/custom-nike-mercurial-vapor-16-academy-by-you.png"
-    },
-    {
-      "name": "Raqueta de Tenis Wilson",
-      "price": "$80.00",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/e7239159-c97b-42e6-93a7-38e2ef73187c/custom-nike-mercurial-superfly-10-elite-by-you.png"
-    },
-    {
-      "name": "Camiseta Deportiva Under Armour",
-      "price": "$45.00",
-      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7a5f0826-bdc0-48d3-9717-7b0de68af7f0/NIKE+AIR+MAX+95.png"
-    },
-    {
-      "name": "Zapatillas Nike Air Max",
-      "price": "$120.00",
-      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fa932cd0-181b-49b5-a3ee-ad3e8d99b972/W+NIKE+VOMERO+18.png"
-    },
-    {
-      "name": "Balón de Fútbol Adidas",
-      "price": "$25.00",
-      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9a1c200e-dabd-4e00-bb02-34d3c3e58f51/W+NIKE+DOWNSHIFTER+13.png"
-    },
-    {
-      "name": "Raqueta de Tenis Wilson",
-      "price": "$80.00",
-      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/pyyixbczj6u5kiwhpjik/W+AIR+MAX+270.png"
-    },
-    {
-      "name": "Camiseta Deportiva Under Armour",
-      "price": "$45.00",
-      "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5dc0c5d9-5dc5-4d50-9176-2b47f9b82a3c/WMNS+ZOOMX+INVINCIBLE+RUN+FK+3.png"
-    }
-  ]
+  {
+    "id": 0,
+    "name": "Camiseta Nike Pro",
+    "price": 34.99,
+    "description": "Camiseta de entrenamiento con tecnología Dri-FIT para mantenerte seco y cómodo.",
+    "image": "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaCO/117386496_01/w=800,h=800,fit=pad",
+    "rating": 4,
+    "tallas": ["S", "M", "L", "XL"],
+    "detalles": "La camiseta Nike Pro es una prenda esencial para cualquier deportista que busca rendimiento óptimo en cada entrenamiento. Confeccionada con una mezcla de poliéster reciclado y elastano, esta camiseta ofrece un ajuste ceñido que se adapta perfectamente al cuerpo sin sacrificar la libertad de movimiento. Su diseño minimalista combina funcionalidad y estilo, ideal tanto para sesiones intensas en el gimnasio como para actividades al aire libre. Además, incorpora paneles de ventilación estratégicos en las zonas de mayor sudoración, asegurando que te mantengas fresco incluso en los momentos más exigentes.",
+    "caracteristicas": [
+      "Tecnología Dri-FIT para absorción del sudor",
+      "Ajuste ergonómico y ceñido",
+      "Costuras planas para reducir la irritación",
+      "Material transpirable y ligero",
+      "Paneles de ventilación en axilas",
+      "Elasticidad en dos direcciones",
+      "Diseño sin etiquetas internas",
+      "Fabricada con materiales reciclados"
+    ],
+    "instrucciones_lavado": [
+      "Lavar a máquina en agua fría (máximo 30°C)",
+      "Usar detergente suave",
+      "No usar lejía ni suavizante",
+      "Secar al aire o en secadora a baja temperatura",
+      "No planchar directamente sobre el logotipo",
+      "Lavar con colores similares"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Botas Adidas Predator Freak",
+    "price": 99.99,
+    "description": "Botas de fútbol con tecnología Demonskin para mayor control y precisión en el balón.",
+    "image": "data:image/jpeg;base64,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",
+    "rating": 5,
+    "tallas": ["40", "41", "42", "43", "44"],
+    "detalles": "Las botas Adidas Predator Freak están diseñadas para los jugadores que quieren dominar cada aspecto del juego. Este modelo de alta gama combina un diseño innovador con tecnologías avanzadas para ofrecer un control excepcional del balón y una tracción superior en el campo. La tecnología Demonskin, con sus púas de goma estratégicamente colocadas, mejora el efecto y la precisión en cada disparo o pase, mientras que la suela dividida está optimizada para césped natural y artificial. El upper sin cordones proporciona un ajuste seguro y una superficie de golpeo limpia, ideal para los futbolistas más exigentes que buscan destacar en cada partido.",
+    "caracteristicas": [
+      "Tecnología Demonskin para efecto y control",
+      "Suela dividida para tracción multidireccional",
+      "Ajuste anatómico sin cordones",
+      "Material sintético resistente al desgaste",
+      "Zonas de amortiguación en el talón",
+      "Diseño aerodinámico",
+      "Plantilla acolchada extraíble",
+      "Compatible con césped natural y artificial"
+    ],
+    "instrucciones_lavado": [
+      "Limpiar con un paño húmedo después de cada uso",
+      "No sumergir en agua ni lavar a máquina",
+      "Usar un cepillo suave para eliminar suciedad",
+      "Secar al aire libre lejos de fuentes de calor",
+      "Aplicar un spray impermeabilizante si es necesario",
+      "Evitar exposición prolongada al sol",
+      "Guardar en un lugar seco y ventilado"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Shorts Puma Active",
+    "price": 24.99,
+    "description": "Shorts ligeros y transpirables, perfectos para correr o entrenar al aire libre.",
+    "image": "data:image/jpeg;base64,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",
+    "rating": 3,
+    "tallas": ["S", "M", "L"],
+    "detalles": "Los shorts Puma Active son la elección ideal para quienes buscan comodidad y funcionalidad en sus actividades deportivas al aire libre. Fabricados con un tejido ligero y transpirable, estos shorts incluyen un forro interno de malla que mejora la ventilación y evita la acumulación de sudor durante entrenamientos intensos. La cintura elástica con cordón ajustable permite un ajuste personalizado, mientras que el bolsillo trasero con cremallera ofrece un espacio seguro para llevar pequeños objetos como llaves o tarjetas. Su diseño versátil los hace perfectos tanto para correr como para entrenamientos en el gimnasio o sesiones casuales.",
+    "caracteristicas": [
+      "Tejido transpirable y ligero",
+      "Forro interno de malla",
+      "Cintura elástica con cordón ajustable",
+      "Bolsillo trasero con cremallera",
+      "Costuras reforzadas",
+      "Diseño ergonómico para movilidad",
+      "Secado rápido",
+      "Reflectores para visibilidad nocturna"
+    ],
+    "instrucciones_lavado": [
+      "Lavar a máquina en ciclo suave (máximo 30°C)",
+      "Usar detergente suave",
+      "No usar suavizante ni lejía",
+      "Secar al aire preferiblemente",
+      "Secar en secadora a baja temperatura si es necesario",
+      "Planchar a baja temperatura si se requiere",
+      "Lavar con colores similares"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Calcetines Under Armour Elite",
+    "price": 17.99,
+    "description": "Calcetines altos con amortiguación estratégica para deportes de alta intensidad.",
+    "image": "data:image/jpeg;base64,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",
+    "rating": 4,
+    "tallas": ["M", "L", "XL"],
+    "detalles": "Los calcetines Under Armour Elite están diseñados para ofrecer soporte y rendimiento durante actividades deportivas de alta intensidad. Con una construcción de altura media, estos calcetines incorporan amortiguación estratégica en el talón, la planta y los dedos para absorber impactos y reducir la fatiga en largas sesiones de entrenamiento o partidos. El tejido antiolor y de secado rápido mantiene los pies frescos y libres de bacterias, mientras que el soporte en el arco asegura un ajuste perfecto que no se desliza. Ideales para deportes como baloncesto, running o fútbol.",
+    "caracteristicas": [
+      "Amortiguación estratégica en talón y planta",
+      "Tecnología antiolor para frescura",
+      "Soporte anatómico en el arco",
+      "Tejido de secado rápido",
+      "Costuras planas en la punta",
+      "Material transpirable",
+      "Ajuste antideslizante",
+      "Diseño de compresión ligera"
+    ],
+    "instrucciones_lavado": [
+      "Lavar a máquina en agua fría (máximo 30°C)",
+      "Usar detergente suave",
+      "No usar lejía ni suavizante",
+      "Secar en secadora a baja temperatura",
+      "No planchar",
+      "Lavar por separado la primera vez"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Camiseta de Yoga Lululemon",
+    "price": 49.99,
+    "description": "Camiseta suave y elástica, ideal para yoga y pilates con un diseño elegante.",
+    "image": "https://static.sprintercdn.com/products/07d8e4863d1540cc92bfc03e079a96c7/camiseta-born-living-yoga-otawa_07d8e4863d1540cc92bfc03e079a96c7_1032178802.jpg",
+    "rating": 5,
+    "tallas": ["S", "M", "L"],
+    "detalles": "La camiseta de yoga Lululemon es una prenda premium diseñada para quienes valoran la comodidad y el estilo en sus prácticas de yoga o pilates. Confeccionada con una mezcla de algodón orgánico, poliéster reciclado y elastano, esta camiseta ofrece elasticidad en cuatro direcciones y una suavidad excepcional, similar a la seda. Su diseño sin costuras elimina las rozaduras, mientras que los paneles transpirables en la espalda y las axilas aseguran una ventilación óptima durante las posturas más exigentes. Perfecta para combinar rendimiento y sofisticación en cada sesión.",
+    "caracteristicas": [
+      "Elasticidad en 4 direcciones",
+      "Tejido suave y ligero",
+      "Diseño sin costuras",
+      "Paneles transpirables en espalda y axilas",
+      "Secado rápido",
+      "Ajuste relajado",
+      "Material sostenible",
+      "Resistencia al estiramiento prolongado"
+    ],
+    "instrucciones_lavado": [
+      "Lavar a mano o en máquina en ciclo delicado (máximo 30°C)",
+      "Usar detergente suave",
+      "No usar lejía ni suavizante",
+      "Secar al aire en una superficie plana",
+      "No usar secadora",
+      "Planchar a baja temperatura si es necesario",
+      "Evitar el contacto con superficies ásperas"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Botas Nike Mercurial Vapor",
+    "price": 89.99,
+    "description": "Botas ultraligeras diseñadas para velocidad y agilidad en el campo.",
+    "image": "https://media.futbolmania.com/media/catalog/product/cache/1/image/0f330055bc18e2dda592b4a7c3a0ea22/H/J/HJ4188-100_botas-de-futbol-color-blanco-nike-mercurial-zoom-vapor-16-elite-fg_1_pie-derecho.jpg",
+    "rating": 4,
+    "tallas": ["41", "42", "43", "44"],
+    "detalles": "Las botas Nike Mercurial Vapor son el compañero perfecto para los futbolistas que priorizan la velocidad y la agilidad. Este modelo ultraligero destaca por su construcción minimalista y su placa de tracción agresiva, diseñada para ofrecer una explosividad sin igual en cada sprint. El upper de material sintético se adapta al pie como una segunda piel, proporcionando un ajuste ceñido que mejora el control del balón. Los tacos cónicos y angulados aseguran una tracción multidireccional, ideales para movimientos rápidos y cambios de dirección en césped natural o artificial.",
+    "caracteristicas": [
+      "Construcción ultraligera",
+      "Placa de tracción agresiva con tacos cónicos",
+      "Ajuste ceñido como segunda piel",
+      "Material sintético duradero",
+      "Zonas de ventilación en el upper",
+      "Plantilla acolchada",
+      "Diseño aerodinámico",
+      "Compatibilidad con césped natural y artificial"
+    ],
+    "instrucciones_lavado": [
+      "Limpiar con un paño húmedo después de cada uso",
+      "Usar un cepillo suave para suciedad incrustada",
+      "No sumergir en agua ni lavar a máquina",
+      "Secar al aire lejos de la luz solar directa",
+      "Aplicar un spray protector si se desea",
+      "Evitar fuentes de calor directas",
+      "Guardar en una bolsa transpirable"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Shorts Adidas Running",
+    "price": 29.99,
+    "description": "Shorts con tecnología de absorción de humedad y bolsillos laterales.",
+    "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEhIWFRUXFRUVFRUVFRUXFRUVFhUWFxcWFRYYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0ODw0PDysZFRkrKystLSsrLSs3KzcrKysrNysrLS0rNystKystKy0rKy0tKystKy0tNy0rKysrKy0rK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAAAQIDBwQFBgj/xABMEAABAwIBBggICA0EAwAAAAABAAIDBBESBQYhMUFRBxNhcYGRodEiMlKSscHC8BRUYnKCk7LSFiMkJTNCRFNzorPD4RVjg6M0dPH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/ALxQhCAQhczn9l6OmpZGmQCWRjmxtB8PwgRitrA5UHRSVDG+M5o5yAoXZShGuaMfTb3qgYJMnBjeNhkfJhGJwxWxEG/62oEjVsC1GcLqZ5Z8FhLAAcWIWJdoA0kk2sL/AEkHpE5Yp/jEP1rO9NOXaX4zB9bH3rzflf4M6OFlPFI17MQkfIIxxuLCQbNebEEO0bA4C5sthkfKlNFExklE2Vzb4nFsXhFznE3cdOgFgA5Cgv8A/wBepPjUH10femnOKjGurp/ro/vKi5sv0uFwZQMBI0G0JwkMIBtba7CTzLn8itiZKHVETpGC3gNc1uI3GhxOy19W22y6D0g7OihGutpvr4vvKN2eGTx+3U318R9peestyxyzOlhi4pjrO4u7cLXW8LABoDSbkDZey3WTMtU8cUbHUjXujHjOEbsZc4ufjJF7bBuA5UF0HPPJ/wAep/rWH1pPw0yf8ch6HgqpPwnpgRgoWjDiwg8X+tj8bRptiFvmhc/lqrE0peyPi2Wa1rLg2AFraPcCyC+jntk/43F1nuSfhvk/43H/ADdypeDK1O2ldT/BCXvAJmMoxh48VzRg0NBxeCNYcQSTpWvyPWCGZkpZjDDfDitc2NtOyxsehBe/4cZP+Nx/zdyX8OMn/G4/5u5VZT55NbhvSNdoaHXe3wsLSNjNAJOrkCxq7OgSQGH4OGnA5mMPsbFwPhAN0gW1X1gHZZBbRz6yf8aZ1P7kfh1k/wCNM6n/AHVSGQcoNp5RK+HjS3S0F+EB3lHwTcgatxsTfUsfKdQ2SV0kcYia434sOuGk6w3QLC97DZq2K4L1Of2Th+1N8yT7qQZ/5O+NN8yX7qrCPPh4ueIaSQBcu1ANa0W0a/BB5+pMrc7TLHJGadoxh2kPthxAW0YdLQQDbkTBbMWelA7VVx/SJb9oBbunqGSND2Oa9p1OaQ4HmIXnfJVXFHFMySAvdI3Cx+MDii03BAI0nEBfTqFtpvaXBpnBA6COmJDJRcWOgSHTpB32AvfSoO6QhCAQhCAQhCAQhCAXnvhHrxPlCdzToaRENv6MBrrcmK/WvQM0oa0udqaC48wFyvLdXIXOc4nS4knnOk+lBDgPldibgPldnQg3TdO70KgEZ8rs5UoZ8rs5CUwX3ehJ4W70IJGx/LPUPfcn8T8o9nvuULQfchKAfcjkQTiH5R7O5KyI+UezeUxslvcJYpve43bkEgjPlHZs5AgxHytvoH+ENkO7du3Ic4+ntH+VQhhPlH30J3Em/jns5/Ukxu3ejfz8iC5270d/KUBxJ8s6uT32p3FfLO3dvtuTC527Vfd38iLu3b93egcIdPju1gbO7nRxOjxndmzo5EeFp5f8JwDuTXfrQLxXyj2bRoTmxfKOzaNurZvUdnbx/wDNSkaDvHv79qCVsWvwjv7u5bnNKtbT1EUr7ubG/E4Dcbi40abYr224eVaXToN/c/5Toj4Wl1rgj36EHppjwQCDcEAgjUQdRTloMxcoNmoYSL3YwROv5UYDT12B6Vv1kCEIQCEIQCEIQcpwnZTMFBJhNnSkQt+lcv8A5GvVAvPbq9+jtXo/LtLDM9kUsbJAGufhe0OA0taDY6L6XaeQrzvlYtNRLgADeMkwgCwDcRDQANQAQYpA3dpTS0WJ9ZSPSv1KhQwe5TS0cuk2GkpwOtRyG1ulA8MHbvKA0aO8oadA5kjTqQBaLX9ZUbGjTzcu4KXYVCO71IJ2N169Ftuz3KkDBo16eXbZQxO8Mje0KYarbiqBzQNNjy6ToKNANj6Tt1FOl8U8yZUeLfdYoHvZbfu1704x6dZ5NJ99iCbhO2IGtF779xQCESHSHJzhfSgGgX6QpIxyDQoA3SpGnSUG0yNk2SplEMQBebkAkNvhFzpPIFsZM0qsVAp+KvLgEoaHstgvhJxEga9iizHqeLrqd2+RrfrPA9pWrlo8XlGik2SNmgcegOaOsoNFwffCaWokp5mERnCH2ILY5XNBjJINvDBw84byqylx9VNxeVBGdDKqmw/8sTnkHze0hdXSy4mB23aNzhocOggjoWRKhCEAhCEAhCEHJ1VaBVVkl9EEELDyOa2aZ3ZJGvPrToJ3n39KtzK9baiyrP8AvKqWMHeBxVOPQVUY8Uc1+1IEah6QJXKgao6kak9qbOEDgdCGpGJ7AgDqUB29Cnk71juOvoVDnHwhzLJa5YsusKaFygyHak12o8yXYkCoWJ1wE5qgiNtCnaUCuSRvTyFCQgmCW2lQtepcSDY5EfhqIXbpYz1PaVbvCO/BHTT/ALqqjd0YXk/ZCpiJ1jdXPnyePyXxo2iCUfSLR7alGHwouMTqSqbrimI574Xgf9Z612OS5QTI0HQS2VnzJRe/S8SFctwhgS5M40aQDDKDyPs3+4tjmXUYqekeT40BiPK6I2b1BknWoOoQhCAQhCATJpA1pcdQBJ5gLp61WdU+CiqX7oJSOfA63agq3KbXDN/G7xpJONP/ACVJcOyyrqVuzcAOxW1nTT4ciwx7mUg7WE+tVNIdJPKkEKcU1KVQNRKENSvQIwJ6RoSqhrvUoH7eYLI3rGft5u9A+TUCiMoPipoQZrSlUTSpAgiI0pzXJX61G5BlRvTnNWI1ynZIgHMRZSBBagdGVc2TXcdkPeRTyDpiLrfYCpdqufg2PGZNdHudMzzhf20ohybJ8IyHI06SyKVn1RL2dganZhVX5vhd+7qgz6yQM9E5WNwVux0lRGdRef8AsiDT9lYmY7z/AKVVb2PdIOdkcbx2sUFqITIpA5ocNRAI5iLp6gEIQgFy3CdU4MmVJ3tDPPe1vrXUrg+GWa1AGfvJo2+l3soNfwjyYMnxM3uib0NjcfSAqeKtThemtHBHyyHzQwD0lVWkEZCLp5CYVQ5qNqAhqoVCEIDYsV+voWUVjSa+hA8ak1OB0JiDIYVI0qFqlagc5Nc1SIAQY9k5pUrmphagkY5S3WOFMwoHBW5wNyfk8zd0oPnMA9lVGFanA07wKgcsR6xJ3JRNwTDCaqPyXx9hkb7Kj4O47w19Puc5tvntkZ7CmzBGGvygz5buyZ9vSmcHhw11ez5bv5Znj2lB2OZ1VxlDTvvf8U1pPKzwD2tK3K5Pg2l/JnxfuaiaPoxYh9orrFAIQhAKuOF99/gUXlVLO721Y6rLhLdjrcmsG2p09EsA+8g0XDDP+PiZuixec933VXa7LhUmvXOHksjb1txe0uNsrAXTSlukCoUoCClQIhKkKBVjSa+hZCx5NfQUDmlNKVpStQOaVKwqKyc0oMnYgIbqSBA9MITmlBQMCe0ppShBKrJ4HJPxlQ3exh81xHtKtQu/4HpPyqQb4Hdkkf8AlKOizWFsrVw3hx63sPtJMyWWyllH+I/tmeUZG0Zcqxviv1tgcpc0hbKmUBvdfrff2lBFwb1tqyvgvrlfI0fNlc132mqxFSmbFdxOVS4nQ6eWJ3NJIWi/0i09CutKBCEKAVV5ffxmU8mcofL5xdJ7KsjLFVxUE0vkRSP81hPqVdVlPbLFAzYyld2Mmb3IOG4QpsdfOdzg3zGhvsrnAFmZaqOMnlk8qR7utxKwwrA0pGpXJWqgQlcmoBIEFAQOWPLr6CskKCXX0H1II4yns1qIa1IxBKQkanpiDIiOhASQlKUCougJEAlCRAQStK7nghd+WuH+w/7cZXCtXbcEx/L+eKT2Uo6qnOHL8g8qIf0WH2Vl5FbhyzWjfEx38sPrJWFWHDl+I+VH/YkHqW0iGHLL/lUYJ6HtHsqCq8suLKupLTYtnmIO4iV1l6BoqgSRskGp7GvHM4A+tUHnSy1dVDfLL2uv61dGZMuKgpj/ALTW+b4PqSjdoQhQaHPmXDQzDy8EX10jIvbXNZRI/wBV4w6ocnyPJ3XkcPQSt3n/ACfiqeP95W0rehsgkP2Fxud1cGPyi++kxU1K3nkDnvHm3UFWvTCU5yatQNJTklk5AFIgpLqgKVoTQpGhA8BY1RrCyli1J1c/qKCCLSpQFj05WU1BImlKgoFiKmIWM0qdrkDghyQFKgalCLICB7V2vBR/54/hSegLiQu14KD+Xt/hyfZQdPlV35+p/wCG3+nKtu4/nof+n/cK1WUmfn+D+ED1RTdyzw/8923Ulu2/rUFd576K+p/iH7IVvZgC2T6f5p7XuVO56PvXVP8AGcOqwPoVu8G9RjydAfJ4xnmSvb6AEo6ZCEKDjs9TesyazZx0zzzxwkj0lVZnHVl9M2U/tNXVT/RZgjYOi7wrQz/iwzUU97BrqmO/y5aZ4j63Nt0qqc5Rhpsnxj4rxn1sjnepBzhTbJxSAKgAQSnFRuKoLppKQlK0IHtCeEgTggUlYVUdXOsxy1dbN4SApysxpWHTjQspiCRJdKmlAJ4KjulBQTAp6haVus2MhvrJxAx7WEguLnbGttew1uOnV6EEWR8n8a8Y8TYQ5gmla3EImucG4nHUNJGvtsuw4R8y46WOKamaeLFo5bkuOIklshPLcg2sNDbDSu1zboWQtlyXMGuaGF7HWDeOgluHFwH6zXYmnkwJMkPY+GfJtW8ExDi8TnAcbA4fipAT+sBoO4tCzoo4LsuCs/nCP5kv2CuZytQGCaSEuDsDrYmkFrhra4W3gg8mpdRwUNvXNO6OQ9gHrWh2tay+XYTupieyZvrTKd98vSAfq0wv5sf3gkilx5dcPIpgP5Q7+4uYyzl91LlKulYPxjmiGM7GG0d3HeQGaBvUHN51zWq6p52Tzf1CO4K0OBWpx5PIOtk7x1tY/wBLiqIyxVl7sIN7Ou83uS7lO3vVw8AtReGpj8l8bvOa4ewlFqIQhQafO3JPwqklhHjEYozqtI3wm6dmkW5iVQucNaJW0wALXRU7IHtOsOic4X6QQee42L0kvN2dljWVJ0AfCJz/ANrrINEUoTXFNBVD3OUTilJTUAFK0JGhPAVChKhCBkrrBaXKDbOW4cLla7KbfCQOoGXZ0lTsUeRn629KzZYkDQUhStCdhQQFIHKYsTcCBgcsmN6iwJw0IJbouo7pboJAV3HBEfy7nhk9LCuGYpoakx4i15biaWmxIu02u3RrBtqQdll3OAwZTqp6ZzXFzeLa/Q4C7IwXN2EgsI3X3risr1TsEkhcS863EkklxsTffpKS5dyDtPcoc4ThhaN7gOgAn02QaOkksbFXDwFVOGpnitofCH33cW8D+6epU1TwOe4MY1z3ONmta0uc47mtGknmV+8D2YtTRudVVRDHPjMbINDnNa5zHF0jgbA+ALNF9ek7FBaSEIUAvMeWJccsjvKke7rcT616XqpcLHO8lrj1AleX5SrBiOv0JLDYpSsaZhBuNHvtQPT2tWIKq3j6OXWP8LJZI06jfmQSgJUzSlVDrpCUgKQuCAYFr8pjSthxgWuyg65QQUL8Lr8oW+abhc9AtvSv0IMrCkwIxILigLJHNSEpj3Aaz1myBHFNAJUTq6Mbb8wum/DCfFYedxsgygxI+RrdZ7+gLHs8+M63I3R261LHEBqHf1oF41x8VtuV3cpYodNybnefVuSBSsQS7ucLpsj8Hk2Uwx/GthgY5we62KRzvB0Mbq1X8InRfUVzUese+xX9weU2Cgh3uDnn6TiR2WSh+amZlHk9tqeLwyLOmf4Ur+d+wfJbYci6FCFkCEIQajO6o4uhqX7RBJbnLSB2kLzfMTfQvTGXcltqYJKdzi0SNtiba40gg6eUBVPlbgnqm6YJY5huN439AN2/zBBXOM7khcDyLb5Szbq6f9NTSsA1uwlzPPbdvatWLFUY0kSwJaYXuNB5NC3BiCxpYEGt46Vv61+fSnsyo8a2g9Y71M+IqF0PIgkGWBtYeghDsqNP6ruzvWM6m5Ez4Mgy3ZVHknsWPPVB28KN1OkESCwMyeDKqrYzMXNhiIvE94x8Yb28QOBDdDtJtssDrW+n4H61rfxc1O924mRgPN4LlauZUODJ9I3dTQ9ZjaT6VulB5Oy/BU0cxp6iJrJBYkYg8YT4rgWm1j1rVur5DttzBdzw2svlV/8ACi+ye9cTHCFRDeR2tx61IyjG3SstsalbEUEMcIGxTtCURlOwcoVDE+6Sw2uHWE7E3f6/QgVqmYoBK0bz1etSsm3N7T3IMqnHhcwXpTI9NxcEMfkRRt81oHqXnTN+LjJ42eU+NvnPA9a9LqUCEIUAhCEAhCEAtVlLNukn/TU0Tyf1sAD/ADxZ3atqhBwdfwU0T/0Zli5Gvxt6cYJ7VzdfwPTDTDVRv3CRjmdrcXoVwIQUBW8GGUWaoWSfMlZ7ZaVpKvM+uj8ejn52xueOtl16aQg8n1FK6M2ka5h3PaWnqKbxYXrFzQdBF1rqrN+kk/SUsD/nRRk9ZCujyvLHpCgMWmy9OT5g5Ndro4x83Ez7BCgp+DfJjHiRtL4TSHC8szgCDcHC55B6lB0mT6fi4o4xqYxrB9FoHqWQhCDz1wxNvlSS/kRW5uLHrXHBi9IZyZi0dbIJp2v4wNDcTHlt2i9rjVtOmy1bOCfJw2SnnlPqCCg8CMAXoNnBdk0a4Xnnml9Tgp4+DfJg/Zuuac+l6o87CMbk7ixuXpBmYmTh+yRnnxO9JU7Mz6AaqKDpiafSE0eZcKfDEXGzRiO4aT1Beo4Mh0rPEpoW/NijHoCzmMAFgABuAsmjzLRZr1sniUkx5eKeG+cQAuiyfwY5Qf40TIx/uSNH9PEexX0hNFd5q8GLaeVs00+NzXNe1kbcLA5puLuNy4XG4KxEIUAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEH/2Q==",
+    "rating": 4,
+    "tallas": ["M", "L", "XL"],
+    "detalles": "Los shorts Adidas Running están diseñados para corredores que buscan rendimiento y practicidad en cada kilómetro. Fabricados con un tejido ligero y resistente a la humedad, estos shorts mantienen la piel seca incluso en largas distancias. La cintura elástica con cordón ajustable asegura un ajuste cómodo y personalizado, mientras que los bolsillos laterales ofrecen espacio para llevar objetos esenciales como llaves, geles energéticos o el teléfono. Su diseño ergonómico y las costuras reforzadas los hacen ideales para entrenamientos intensos o competiciones al aire libre.",
+    "caracteristicas": [
+      "Tecnología de absorción de humedad",
+      "Bolsillos laterales funcionales",
+      "Cintura elástica con cordón ajustable",
+      "Tejido ligero y resistente",
+      "Costuras reforzadas",
+      "Diseño ergonómico",
+      "Reflectores para seguridad nocturna",
+      "Secado rápido"
+    ],
+    "instrucciones_lavado": [
+      "Lavar a máquina en agua fría (máximo 30°C)",
+      "Usar detergente suave",
+      "No usar lejía ni suavizante",
+      "Secar al aire o en secadora a baja temperatura",
+      "Planchar a baja temperatura si es necesario",
+      "Lavar con colores similares",
+      "No limpiar en seco"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Calcetines Nike Dri-FIT",
+    "price": 14.99,
+    "description": "Calcetines con soporte en el arco y tejido transpirable para deportes.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2i7W44yozhZ8GUlGdMdz6oXiHtK_p0hACww&s",
+    "rating": 3,
+    "tallas": ["S", "M", "L"],
+    "detalles": "Los calcetines Nike Dri-FIT son una opción confiable para deportistas que necesitan mantener sus pies secos y cómodos durante actividades físicas intensas. Confeccionados con una mezcla de algodón, poliéster y elastano, estos calcetines ofrecen un ajuste anatómico que se adapta perfectamente a la forma del pie. La tecnología Dri-FIT elimina el sudor rápidamente, mientras que el soporte en el arco y la amortiguación ligera en la planta brindan estabilidad y protección en cada paso. Su diseño de altura media los hace versátiles para deportes como fútbol, running o entrenamiento en el gimnasio.",
+    "caracteristicas": [
+      "Tecnología Dri-FIT para eliminar el sudor",
+      "Soporte anatómico en el arco",
+      "Tejido transpirable y ligero",
+      "Ajuste anatómico para cada pie",
+      "Amortiguación ligera en la planta",
+      "Costuras planas en la punta",
+      "Elasticidad duradera",
+      "Diseño de compresión moderada"
+    ],
+    "instrucciones_lavado": [
+      "Lavar a máquina en ciclo normal (máximo 30°C)",
+      "Usar detergente suave",
+      "No usar lejía ni suavizante",
+      "Secar al aire o en secadora a baja temperatura",
+      "No planchar",
+      "Lavar con colores oscuros por separado",
+      "Evitar el contacto con velcro u objetos ásperos"
+    ]
+  }
+]
